@@ -1,0 +1,55 @@
+body {
+    background-color: pink;
+}
+
+header h1{
+    color: white;
+    width: 33%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header h1:hover{
+    color: black;
+}
+
+#introduction {
+    color: white;
+    width: 33%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#photo img{
+    width: 13%;
+    display: block;
+    margin: 0 auto;
+}
+
+#principles-ordinances{
+    width: 33%;
+    margin: 0 auto;
+    line-height: 1.5em;
+    font-weight: bold;
+}
+
+#quote{
+    font-size: 2em;
+    color: white;
+    width: 23%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#author {
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+footer {
+    padding: 13px;
+}
