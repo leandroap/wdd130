@@ -182,3 +182,11 @@ nav a:hover {
   border-top: 1px solid;
   border-right: 1px solid;
 }
+
+.img-about, .img-blog {
+  width: 50%;
+}
+
+.home-bg {
+  width: 100%;
+}
