@@ -1,0 +1,28 @@
+body {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+#hero-img img{
+    display: block;
+    margin: 0 auto;
+}
+
+.content {
+    display: grid;
+    background-color: #2986cc;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+#view {
+    width: 100px;
+    border-right: 1px solid;
+    border-left: 1px solid;
+}
