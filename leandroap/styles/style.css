@@ -36,7 +36,8 @@ body {
     background-color: var(--dodger-blue);
     /*font-family: 'Roboto', sans-serif;
     font-size: 22px;*/
-    margin: 0;
+    max-width: 1600px;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -76,6 +77,8 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
     transition: 0.2s;
     font-size: 1.2em;
 }
