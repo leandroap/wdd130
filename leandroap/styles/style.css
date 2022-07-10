@@ -22,7 +22,7 @@
     /* these colors below should be chosen from among your palette colors above */
     --headline-color-on-white: #1E96FC;  /* headlines on a white background */ 
     --headline-color-on-color: white; /* headlines on a colored background */ 
-    --paragraph-color: #000505;
+    --paragraph-color: var(--rich-black-fogra-39);
     --paragraph-color-on-white: #1E96FC; /* paragraph text on a white background */ 
     --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
     --paragraph-background-color: #1E96FC  ;
@@ -34,6 +34,15 @@
 
 body {
     background-color: var(--dodger-blue);
+    /*font-family: 'Roboto', sans-serif;
+    font-size: 22px;*/
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.white-body {
+    background-color: white;
     /*font-family: 'Roboto', sans-serif;
     font-size: 22px;*/
     max-width: 1600px;
@@ -164,7 +173,7 @@ main p {
     opacity: 0.75;
 }
 
-.copyright {
+#home-footer .copyright {
     text-align: center;
     font-family: var(--paragraph-font);
     color: var(--paragraph-color-on-color);
@@ -174,10 +183,55 @@ main p {
     text-shadow: 2px 2px var(--rich-black-fogra-39);
 }
 
-.siteplan {
+#home-footer .siteplan {
     grid-column: 10/11;
     grid-row: 2/3;
     margin: 0 auto;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 400px 400px 100px;
+    width: 100%;
+    border: dotted 1px white;
+    background-color: var(--dark-pastel-green);
+    position: relative;
+}
+
+.footer .copyright {
+    text-align: center;
+    font-family: var(--paragraph-font);
+    color: white;
+    grid-column: 2/3;
+    margin: 0 auto;
+    text-shadow: 2px 2px var(--rich-black-fogra-39);
+    position: absolute;
+    top: 50%;
+}
+
+.footer .social {
+    grid-column: 3/4;
+}
+
+.footer .siteplan {
+    grid-column: 4/5;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+
+.footer .siteplan a {
+    -moz-transition: border-color 0.2s ease-in-out;
+    -webkit-transition: border-color 0.2s ease-in-out;
+    -ms-transition: border-color 0.2s ease-in-out;
+    transition: border-color 0.2s ease-in-out;
+    border-bottom: dotted 2px white;
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-color);
+    outline: 0;
+    text-decoration: none;
+    text-shadow: 2px 2px var(--rich-black-fogra-39);
 }
 
 .siteplan a {
@@ -195,6 +249,7 @@ main p {
 
 .siteplan a:hover {
     border-color: transparent;
+    font-size: 1.1em;
 }
 
 ul {
@@ -272,7 +327,7 @@ ul {
 #topBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
-    bottom: 100px; /* Place the button at the bottom of the page */
+    bottom: 150px; /* Place the button at the bottom of the page */
     right: 30px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
@@ -293,6 +348,19 @@ ul {
     width: 75%;
     display: grid;
     grid-template-rows: 100px 300px 300px 300px 350px;
+}
+
+.white-body h1 {
+    font-size: 3em;
+    color: var(--headline-color-on-white);
+}
+
+.white-body h3 {
+    color: var(--headline-color-on-white);
+}
+
+.white-body p {
+    color: var(--paragraph-color);
 }
 
 #about h1, #about h3 {
