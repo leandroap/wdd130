@@ -34,8 +34,6 @@
 
 body {
     background-color: var(--dodger-blue);
-    /*font-family: 'Roboto', sans-serif;
-    font-size: 22px;*/
     max-width: 1600px;
     margin: 0 auto;
     padding: 0;
@@ -43,8 +41,6 @@ body {
 
 .white-body {
     background-color: white;
-    /*font-family: 'Roboto', sans-serif;
-    font-size: 22px;*/
     max-width: 1600px;
     margin: 0 auto;
     padding: 0;
@@ -324,6 +320,47 @@ ul {
     color: #fff;
 }
 
+.share nav {
+    margin: 0;
+}
+
+.share nav li {
+    display: inline-block;
+    height: 1.35em;
+    line-height: 1.885em;
+    position: relative;
+    top: 0;
+    width: 2.35em;
+}
+
+.share nav a {
+    border: 0;
+    display: inline-block;
+    color: var(--dark-pastel-green);
+}
+
+.share nav a:before {
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    border-radius: 100%;
+    border: solid 1px var(--dark-pastel-green);
+    display: block;
+    font-size: 1.3em;
+    height: 1.5em;
+    line-height: 1.5em;
+    position: relative;
+    text-align: center;
+    top: 0;
+    width: 1.5em;
+}
+
+.share nav a:hover:before {
+    background-color: rgba(76, 185, 68, 0.175);
+    color: var(--red-ncs);
+}
+
 #topBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
@@ -355,7 +392,7 @@ ul {
     color: var(--headline-color-on-white);
 }
 
-.white-body h3 {
+.white-body h2, .white-body h3, .white-body h4 {
     color: var(--headline-color-on-white);
 }
 
@@ -408,6 +445,88 @@ ul {
     width: 100%;
 }
 
-.post-picture{
-    width: 25%;
+#blog {
+    width: 85%;
+    display: grid;
+    grid-template-columns: 1fr 15% 250px;
+}
+
+.post {
+    grid-column: 1/2;
+}
+
+.menu-box {
+    grid-column: 3/4;
+}
+
+.post-header {
+    display: grid;
+    grid-template-columns: 1fr 150px 150px;
+}
+
+.post-header h2 {
+    margin: 0 auto;
+}
+
+.post-title {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.post-author {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-left: 10px;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 5px;
+
+}
+
+.post-date {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5px;
+}
+
+.share {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+.share ul {
+    margin: 10px 5px 10px 0;
+    padding-left: 0;
+}
+
+#line {
+    border-bottom: solid 2px var(--dodger-blue);
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
+
+.post-body {
+    text-align: left;
+}
+
+.post-left-aside {
+    float: left;
+    width: 300px;
+    position: relative;
+}
+
+.post-left-aside img {
+    display: flex;
+    justify-content: left;
+}
+
+.post-picture {
+    width: 90%;
 }

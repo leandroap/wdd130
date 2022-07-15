@@ -7,7 +7,7 @@
     <title>Leandro Amaral Pereira - Blog</title>
     <link type="text/css" rel="stylesheet" href="styles/style.css">
 </head>
-<body>
+<body class="white-body">
     <header>
         <a id="logo_link" href="index.html">
             <img class="logo" src="images/logo.png" alt="Logo">
@@ -16,8 +16,11 @@
             <a href="about.html">About Me</a>
             <a href="blog.html">Blog</a>            
         </nav>
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
     </header>
-    <main>
+    <main id="blog">
         <div class="post">
             <div class="post-header">
                 <h2 class="post-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
@@ -25,14 +28,17 @@
                 <h4 class="post-date">25/Jun/2022</h4>
                 <div class="share">
                     <nav>
-                        <a href="https://api.whatsapp.com/send?text=Look this site https://leandroap.github.io/leandroap/blog.html" target="_blank">WhatsApp</a>
-                        <button onclick="window.print()">Print</button>
+                        <ul>
+                            <li><i class="fa fa-share-alt fa-lg"></i></li>
+                            <li><a class="fa fa-whatsapp" href="https://api.whatsapp.com/send?text=Look this site https://leandroap.github.io/leandroap/blog.html" target="_blank"><span class="label">WhatsApp</span></a></li>
+                            <li><a class="fa fa-print" href="#" onclick="window.print()"><span class="label">Print</span></a></li>
+                        </ul>
                     </nav>
                 </div>
-                <hr>
+                <div id="line"></div>
             </div>
             <div class="post-body">
-                <aside class="post-aside">
+                <aside class="post-left-aside">
                     <img class="post-picture" src="images/Event1.jpg" alt="">
                 </aside>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur felis ligula, bibendum vel ultricies cursus, malesuada quis lacus. Nunc vel dolor sed nibh laoreet blandit molestie quis nisi. Suspendisse at nibh consectetur, posuere massa in, rhoncus velit. Ut eu interdum diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam est purus, varius eget est et, mollis blandit sapien. Nam aliquet interdum odio at molestie.</p>
@@ -41,7 +47,7 @@
                 <p>Ut vestibulum non neque vitae volutpat. Ut non augue vel ligula volutpat dignissim. Sed accumsan dignissim fermentum. Curabitur sit amet ante odio. Donec tellus justo, imperdiet a dui sed, varius suscipit arcu. Integer ut mi sit amet magna euismod volutpat. Aenean ut purus sagittis, semper nisi ut, pharetra eros</p>
             </div>
         </div>
-        <div id="menu-box">
+        <div class="menu-box">
             <h3>Recents posts</h3>
             <div class="post-recent">
                 <ul>
@@ -57,7 +63,7 @@
         <div class="social">
             <nav>
                 <ul>
-                    <li><a href="https://www.linkedin.com/in/leandroap" target="_blank" class="fa fa-linkedin"><span class="label">Linkedin</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/leandroap" target="_blank" class="fa fa-linkedin-square"><span class="label">Linkedin</span></a></li>
                     <li><a href="https://twitter.com/pereirala" target="_blank" class="fa fa-twitter"><span class="label">Twitter</span></a></li>
                     <li><a href="https://github.com/leandroap" target="_blank" class="fa fa-github"><span class="label">Github</span></a></li>
                     <li><a href="mailto:leandro@leandroap.com" class="fa solid fa-envelope"><span class="label">Email</span></a></li>
@@ -66,5 +72,7 @@
         </div>
         <div class="siteplan"><a href="site-plan.html">Site plan</a></div>
     </footer>
+    <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+    <script src='js/utils.js'></script>
 </body>
 </html>
