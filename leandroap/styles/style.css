@@ -565,6 +565,10 @@ ul {
     font-size: 1.1em;
 }
 
+.to-print {
+    display: none;
+}
+
 @media print {
     .menu-box, header, .social, .siteplan {
         display: none;
@@ -573,5 +577,9 @@ ul {
     .post {
         display: block;
         width: 800px;
+    }
+
+    .to-print {
+        display: inline-block;
     }
 }
