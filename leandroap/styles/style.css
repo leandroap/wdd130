@@ -86,6 +86,7 @@ header {
     margin: 0 auto;
     transition: 0.2s;
     font-size: 1.2em;
+    z-index: 2;
 }
 
 header nav {
@@ -457,6 +458,8 @@ ul {
 
 .menu-box {
     grid-column: 3/4;
+    height: 40%;
+    max-height: 350px;
 }
 
 .post-header {
@@ -529,4 +532,45 @@ ul {
 
 .post-picture {
     width: 90%;
+}
+
+.post-recent {
+    width: 70%;
+    height: 65%;
+    min-height: 100px;
+    margin: 0 auto;
+    background-color: var(--dodger-blue);
+    text-align: left;
+    border: dotted 1px white;
+}
+
+.post-recent li {
+    padding: 5px;
+}
+
+.post-recent a {
+    text-align: center;
+    text-decoration: none;
+}
+
+.post-recent a:link, .post-recent a:visited {
+    color: var(--nav-link-color);
+    text-decoration: none;
+}
+
+.post-recent a:hover {
+    border-top: dotted 1px white;
+    border-bottom: dotted 1px white;
+    font-size: 1.1em;
+}
+
+@media print {
+    .menu-box, header, .social, .siteplan {
+        display: none;
+    }
+
+    .post {
+        display: block;
+        width: 800px;
+    }
 }
